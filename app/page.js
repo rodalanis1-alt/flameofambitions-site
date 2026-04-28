@@ -1,6 +1,14 @@
 export default function Home() {
   return (
-    <main style={{ padding: "40px", fontFamily: "sans-serif" }}>
+    <main style={{ padding: "40px", fontFamily: "sans-serif", textAlign: "center" }}>
+      
+      {/* LOGO */}
+      <img 
+        src="/logo.png" 
+        alt="Flameofambitions Logo" 
+        style={{ width: "200px", margin: "0 auto 20px" }}
+      />
+
       <h1>🔥 Flameofambitions LLC</h1>
 
       <h2>Forge the Body. Refine the Mind.</h2>
@@ -27,7 +35,7 @@ export default function Home() {
       <hr />
 
       <h3>Services</h3>
-      <ul>
+      <ul style={{ listStyle: "none", padding: 0 }}>
         <li>1:1 Coaching</li>
         <li>Meal Plans</li>
         <li>Online Training Programs</li>
@@ -39,6 +47,7 @@ export default function Home() {
       <a href="https://calendly.com/YOURNAME">
         Click here to book with Calendly
       </a>
+
     </main>
   );
 }
